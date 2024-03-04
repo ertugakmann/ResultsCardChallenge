@@ -14,6 +14,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex;
     gap: 30px;
+    border-radius: 50px;
 }
 
 .your-result {
@@ -38,21 +39,25 @@
 
 }
 
+.point-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .point-scale {
-    margin-left: 45px;
-    margin-top: 50px;
-    height: 35%;
-    width: 62%;
+    margin-top: 30px;
+    height: 60%;
+    width: 35%;
     border-radius: 200px;
     background-color: #4827D0;
+    padding: 10px;
 }
 
 .points {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
 }
 
 .point {
@@ -142,7 +147,7 @@
 }
 
 .reaction-title {
-    margin-right: 25px;
+    margin-right: auto;
 
 }
 
@@ -152,7 +157,7 @@
 }
 
 .reaction-icon {
-    margin-right: auto;
+    margin-right: 10px;
     margin-left: 30px;
 }
 
@@ -177,7 +182,7 @@
 }
 
 .memory-title {
-    margin-right: 25px;
+    margin-right: auto;
 
 }
 
@@ -187,7 +192,7 @@
 }
 
 .memory-icon {
-    margin-right: auto;
+    margin-right: 10px;
     margin-left: 30px;
 }
 
@@ -211,7 +216,7 @@
 }
 
 .verbal-title {
-    margin-right: 25px;
+    margin-right: auto;
 
 }
 
@@ -221,7 +226,7 @@
 }
 
 .verbal-icon {
-    margin-right: auto;
+    margin-right: 10px;
     margin-left: 30px;
 }
 
@@ -245,7 +250,7 @@
 }
 
 .visual-title {
-    margin-right: 25px;
+    margin-right: auto;
 
 }
 
@@ -255,7 +260,7 @@
 }
 
 .visual-icon {
-    margin-right: auto;
+    margin-right: 10px;
     margin-left: 30px;
 }
 
@@ -282,4 +287,90 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 17px;
+}
+
+@media screen and (max-width: 390px) {
+    .results-summary {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .main-container {
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        display: flex;
+
+    }
+
+    .your-result {
+        width: 100%;
+    }
+
+    .point-scale {
+        width: 35%;
+    }
+
+    .points {
+        padding: 20px;
+    }
+
+    .summary {
+        margin-bottom: 60px;
+    }
+
+    .summary-cards {
+        width: 90%;
+        padding-right: 20px;
+        margin-left: 20px;
+    }
+
+    .summary-title {
+        margin-left: 20px;
+    }
+
+    .reaction-title {
+        margin-right: auto;
+        float: left;
+        color: #FF7E7D;
+        font-weight: 600;
+    }
+
+    .reaction-icon {
+        margin-right: 10px;
+    }
+
+    .memory-title {
+        margin-right: auto;
+        float: left;
+        color: #FFCD6E;
+        font-weight: 600;
+    }
+
+    .memory-icon {
+        margin-right: 10px;
+    }
+
+    .verbal-title {
+        margin-right: auto;
+        float: left;
+        color: #00BB8F;
+        font-weight: 600;
+    }
+
+    .verbal-icon {
+        margin-right: 10px;
+    }
+
+    .visual-title {
+        margin-right: auto;
+        float: left;
+        color: #4A59DF;
+        font-weight: 600;
+    }
+
+    .visual-icon {
+        margin-right: 10px;
+    }
+
 }
